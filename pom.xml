@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.bamdow.framework</groupId>
+  <artifactId>TimelyCache</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+    <properties>
+  		<jdk.version>1.6</jdk.version>
+  		<encoding.version>UTF-8</encoding.version>
+  		<compiler.version>2.4</compiler.version>
+  		<resources.version>2.4</resources.version>
+  		<war.version>2.4</war.version>
+  	</properties>
+
+  
+   <build>
+      <plugins>
+	      <!-- maven 编译插件 -->
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-compiler-plugin</artifactId>
+	        <version>${compiler.version}</version>
+	        <configuration>
+	            <!-- 源代码使用的开发版本 -->
+	            <source>${jdk.version}</source>
+	            <!-- 需要生成的目标class文件的编译版本 -->
+	            <target>${jdk.version}</target>
+	            <encoding>${encoding.version}</encoding>
+	        </configuration>
+	      </plugin>
+		<plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-resources-plugin</artifactId>
+		    <version>${resources.version}</version>
+		</plugin>
+	</plugins>
+  </build>
+</project>
